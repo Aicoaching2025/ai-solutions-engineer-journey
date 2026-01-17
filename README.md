@@ -1,7 +1,7 @@
 # ai-solutions-engineer-journey
 My AI Engineer Journey
 
-<![CDATA[<div align="center">
+<!<div align="center">
 
 # 🚀 My Journey to AI Solutions Engineer
 
