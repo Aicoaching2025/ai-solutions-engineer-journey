@@ -1,0 +1,100 @@
+# Week 1: LLM Foundations — Summary
+
+**Date:** January 20–26, 2025
+
+---
+
+## ✅ Completed Tasks
+
+| Day | Task | Status |
+|-----|------|--------|
+| Mon | Read - What are LLMs? How do they work? (Book Ch 1-2) | ✅ |
+| Tue | Watch - Intro to Large Language Models (Andrej Karpathy) | ✅ |
+| Wed | Hands-on - Get OpenAI API key, make first API call | ✅ |
+| Thu | Hands-on - Explore different models (GPT-4, Claude) | ✅ |
+| Fri | Read - Tokens, context windows, model parameters | ✅ |
+| Sat | Mini-project - Build simple chatbot in Python using RAG | ✅ |
+| Sun | Review & reflect | ✅ |
+
+---
+
+## 🚀 Project Deliverables
+
+**RAG Chatbot — HR Policy Assistant**
+
+- **Live Demo:** [hr-copilot.streamlit.app](https://hr-copilot.streamlit.app/)
+- **Source Code:** [github.com/aicoaching2025/chatbot](https://github.com/aicoaching2025/chatbot)
+- **Documentation:** RAG_Chatbot_Project_Overview.docx
+
+---
+
+## 📚 Articles Read
+
+1. **EU AI Act Compliance** — [OpenAI Help: Complying with the EU AI Act's Prohibited Practices Requirements](https://help.openai.com/en/articles/10658393-complying-with-the-eu-ai-acts-prohibited-practices-requirements)
+
+2. **RAG & Semantic Search** — [OpenAI Help: Retrieval-Augmented Generation (RAG) and Semantic Search for GPTs](https://help.openai.com/en/articles/8868588-retrieval-augmented-generation-rag-and-semantic-search-for-gpts)
+
+---
+
+## 🎓 Other Learning
+
+- DataCamp coursework
+- Citi program
+- NJ Grant application
+
+---
+
+## 💡 Key Learnings
+
+### How RAG Works (Best Summary)
+
+When you upload files to a custom GPT and enable knowledge retrieval, the following happens behind the scenes:
+
+1. **Chunking:** Files are automatically broken into smaller sections (e.g., paragraphs or logical blocks)
+2. **Embedding:** Each chunk is converted into an embedding using OpenAI's embedding models
+3. **Storage:** The embeddings are stored in OpenAI's internal vector store
+4. **Querying:** When a user asks a question, the GPT creates a vector for the prompt and retrieves semantically similar chunks
+5. **Response generation:** The retrieved chunks are included as context in the GPT's prompt to generate a more informed answer
+
+---
+
+## 🔧 Challenges & Lessons Learned
+
+### 1. API Key Management
+Had difficulty hiding the API key properly. Encountered authentication errors like:
+```
+anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 
+'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+```
+**Lesson:** Always use `.env` files locally and platform secrets (like Streamlit Cloud's Secrets) for deployment. Never commit API keys to GitHub.
+
+### 2. UI/UX is a Separate Skill
+Managing the chatbot UI turned into its own project. Required learning CSS for custom styling (gradients, chat bubbles, colors).
+
+**Lesson:** Good UX is critical — no one will use a chatbot if the interface is poor. Will practice more CSS later.
+
+### 3. Dependency Management
+Several sessions were spent just loading initial files and managing dependencies. New tools mean new errors.
+
+**Lesson:** When learning something new, take breaks. Overworking leads to missing obvious errors. Fresh eyes help.
+
+### 4. GitHub Push Issues
+Encountered `remote rejected - push declined due to repository rule violations` when accidentally trying to push files containing API keys.
+
+**Lesson:** Set up `.gitignore` BEFORE the first commit.
+
+---
+
+## 🎯 Reflection
+
+Overall, I was happy with my progress this week. I successfully built and deployed my first RAG chatbot, which was the main goal. The project taught me not just about LLMs and embeddings, but also about the full deployment pipeline — from local development to cloud hosting.
+
+I'm also glad I started working on DataCamp. I feel like I'm on the right path and will learn a lot.
+
+**I'm excited. Cheers to my upcoming learning! 🎉**
+
+---
+
+## 📅 Next Week Preview
+
+Week 2: Prompt Engineering (Coming Soon)
